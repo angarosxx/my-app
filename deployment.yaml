@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: my-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: my-app
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: myregistry/my-app:latest
+        image: angarosx/my-app:64a98523333c180bb7137fbec1f629601baf7d7b
         ports:
         - containerPort: 80
         resources:
